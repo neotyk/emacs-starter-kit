@@ -22,3 +22,5 @@ tramp
 \#*
 gist-auth.el
 ac-comphist.dat
+/.org-id-locations
+tutorial/*

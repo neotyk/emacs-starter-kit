@@ -1,0 +1,18 @@
+[submodule "elein"]
+	path = elein
+	url = http://github.com/remvee/elein.git
+[submodule "magit"]
+	path = magit
+	url = http://github.com/philjackson/magit.git
+[submodule "gist.el"]
+	path = gist.el
+	url = http://github.com/defunkt/gist.el.git
+[submodule "org-mode"]
+	path = org-mode
+	url = git://repo.or.cz/org-mode.git
+[submodule "auto-complete"]
+	path = auto-complete
+	url = https://github.com/m2ym/auto-complete.git
+[submodule "ac-slime"]
+	path = ac-slime
+	url = http://github.com/purcell/ac-slime.git

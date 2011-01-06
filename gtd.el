@@ -13,17 +13,24 @@
 
 ;; agenda views
 (setq org-agenda-custom-commands
-      '(("H" "Office and Home Lists"
-         ((agenda)
-          (tags-todo "OFFICE")
-          (tags-todo "HOME")
-          (tags-todo "COMPUTER")
-          (tags-todo "DVD")
-          (tags-todo "READING")))
-        ("D" "Daily Action List"
+      '(("D" "Daily Action List"
          ((agenda "" ((org-agenda-ndays 1)
                       (org-agenda-sorting-strategy
                        '((agenda time-up priority-down tag-up)))
-                      (org-deadline-warning-days 0)))))))
+                      (org-deadline-warning-days 0)))))
+        ("P" "Project List"
+         ((tags "PROJECT")))
+        ("O" "Office"
+          ((agenda)
+           (tags-todo "OFFICE")))
+        ("W" "Weekly Plan"
+          ((agenda)
+           (todo "TODO")
+           (tags "PROJECT")))
+        ("H" "Home NA Lists"
+          ((agenda)
+           (tags-todo "HOME")
+           (tags-todo "COMPUTER")))
+        ))
 
 (provide 'gtd)

@@ -42,11 +42,39 @@
 
 (setq flyspell-mode t)
 
-(color-theme-zenburn)
+; (color-theme-zenburn)
 
-(unless (zenburn-format-spec-works-p)
-  (zenburn-define-format-spec))
+;; (unless (zenburn-format-spec-works-p)
+;;   (zenburn-define-format-spec))
 
 ;; Inconsolata font
+(set-face-attribute 'default nil
+                    :family "Inconsolata" :height 130 :weight 'normal)
+
 (set-face-font 'default "-apple-Inconsolata-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 (set-face-font 'org-column "-apple-Inconsolata-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
+
+;(setq next-line-add-newlines t)
+
+(require 'recentf)
+ 
+;; get rid of `find-file-read-only' and replace it with something
+;; more useful.
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+ 
+;; enable recent files mode.
+(recentf-mode t)
+ 
+; 50 files ought to be enough.
+(setq recentf-max-saved-items 50)
+ 
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (let ((home (expand-file-name (getenv "HOME"))))
+    (find-file
+     (ido-completing-read "Recentf open: "
+                          (mapcar (lambda (path)
+                                    (replace-regexp-in-string home "~" path))
+                                  recentf-list)
+                          nil t))))

@@ -5,30 +5,57 @@
 (add-to-list 'load-path "~/.emacs.d/magit")
 (require 'magit)
 
-;; elein
-(add-to-list 'load-path "~/.emacs.d/elein")
-(require 'elein)
-
-;; auto-complete
-(add-to-list 'load-path "~/.emacs.d/auto-complete")
-(require 'auto-complete-config)
-(ac-config-default)
-
-;; auto-complete for slime
-(add-to-list 'load-path "~/.emacs.d/ac-slime")
-(require 'ac-slime)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-
 ;; highlight paretheses mode
 (require 'highlight-parentheses)
-(add-hook 'clojure-mode-hook
-          (lambda ()
-            (highlight-parentheses-mode t)))
-(require 'swank-clojure)
+
+;; clojure mode
+(add-to-list 'load-path "~/.emacs.d/clojure-mode/")
+(require 'clojure-mode)
+
+;; slime
+(add-to-list 'load-path "~/.emacs.d/slime/")
+(add-to-list 'load-path "~/.emacs.d/slime/contrib/")
+(require 'slime)
 (add-hook 'slime-repl-mode-hook
           (lambda ()
             (highlight-parentheses-mode t)))
+
+;; swank-clojure
+(add-to-list 'load-path "~/.emacs.d/swank-clojure/")
+(require 'swank-clojure)
+
+;; company
+(add-to-list 'load-path "~/.emacs.d/company/")
+(autoload 'company-mode "company" nil t)
+
+;; slime-company
+(add-to-list 'load-path "~/.emacs.d/slime-company/")
+(require 'slime-company)
+(slime-setup '(;slime-fancy
+               slime-repl
+               ;;slime-autodoc
+               ;;slime-c-p-c
+               slime-editing-commands
+               ;;slime-fancy-inspector
+               ;;slime-fuzzy
+               slime-highlight-edits
+               ;;slime-company
+               ))
+
+
+;; configure clojure-mode
+(add-hook 'clojure-mode-hook
+          (lambda ()
+            (highlight-parentheses-mode t)
+            (paredit-mode t)
+            (slime-mode t)
+            ;;(company-mode t)
+            ;; (set (make-local-variable 'company-beckends) '(slime-company-beckend))
+            ))
+
+;; elein
+(add-to-list 'load-path "~/.emacs.d/elein")
+(require 'elein)
 
 ;; org-mode
 (setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))

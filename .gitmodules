@@ -16,3 +16,18 @@
 [submodule "ac-slime"]
 	path = ac-slime
 	url = http://github.com/purcell/ac-slime.git
+[submodule "company"]
+	path = company
+	url = https://github.com/nschum/company.git
+[submodule "clojure-mode"]
+	path = clojure-mode
+	url = https://github.com/technomancy/clojure-mode.git
+[submodule "slime"]
+	path = slime
+	url = https://github.com/nablaone/slime.git
+[submodule "slime-company"]
+	path = slime-company
+	url = https://github.com/emacsmirror/slime-company.git
+[submodule "swank-clojure"]
+	path = swank-clojure
+	url = https://github.com/technomancy/swank-clojure.git

@@ -19,6 +19,7 @@
 (add-hook 'slime-repl-mode-hook
           (lambda ()
             (highlight-parentheses-mode t)))
+(setq slime-protocol-version 'ignore)
 
 ;; swank-clojure
 (add-to-list 'load-path "~/.emacs.d/swank-clojure/")

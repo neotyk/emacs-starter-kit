@@ -19,6 +19,7 @@
 (add-hook 'slime-repl-mode-hook
           (lambda ()
             (highlight-parentheses-mode t)))
+
 (setq slime-protocol-version 'ignore)
 
 ;; swank-clojure
@@ -106,3 +107,7 @@
                                     (replace-regexp-in-string home "~" path))
                                   recentf-list)
                           nil t))))
+
+;; closure-template
+(add-to-list 'load-path "~/.emacs.d/cl-closure-template/")
+(require 'closure-template-html-mode)

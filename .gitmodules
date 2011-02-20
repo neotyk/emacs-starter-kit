@@ -31,3 +31,6 @@
 [submodule "swank-clojure"]
 	path = swank-clojure
 	url = https://github.com/technomancy/swank-clojure.git
+[submodule "cl-closure-template"]
+	path = cl-closure-template
+	url = https://github.com/archimag/cl-closure-template.git

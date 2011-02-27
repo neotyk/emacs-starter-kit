@@ -44,6 +44,8 @@
                ;;slime-company
                ))
 
+;; clojure test mode
+(require 'clojure-test-mode)
 
 ;; configure clojure-mode
 (add-hook 'clojure-mode-hook

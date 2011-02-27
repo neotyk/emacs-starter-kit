@@ -31,9 +31,9 @@
 (autoload 'company-mode "company" nil t)
 
 ;; slime-company
-(add-to-list 'load-path "~/.emacs.d/slime-company/")
-(require 'slime-company)
-(slime-setup '(;slime-fancy
+;;(add-to-list 'load-path "~/.emacs.d/slime-company/")
+;;(require 'slime-company)
+(slime-setup '(;;slime-fancy
                slime-repl
                ;;slime-autodoc
                ;;slime-c-p-c

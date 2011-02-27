@@ -113,3 +113,6 @@
 ;; closure-template
 (add-to-list 'load-path "~/.emacs.d/cl-closure-template/")
 (require 'closure-template-html-mode)
+
+;; desktop save mode
+(setq desktop-save-mode 1)

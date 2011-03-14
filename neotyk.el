@@ -47,12 +47,23 @@
 ;; clojure test mode
 (require 'clojure-test-mode)
 
+;; midje
+(add-to-list 'load-path "~/.emacs.d/midje/")
+(require 'midje-mode)
+(eval-after-load 'clojure-mode
+  '(define-clojure-indent
+     (fact 'defun)
+     (facts 'defun)
+     (against-background 'defun)
+     (provided 0)))
+
 ;; configure clojure-mode
 (add-hook 'clojure-mode-hook
           (lambda ()
             (highlight-parentheses-mode t)
             (paredit-mode t)
             (slime-mode t)
+            (midje-mode t)
             ;;(company-mode t)
             ;; (set (make-local-variable 'company-beckends) '(slime-company-beckend))
             ))

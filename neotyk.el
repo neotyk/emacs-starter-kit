@@ -39,7 +39,7 @@
                ;;slime-c-p-c
                slime-editing-commands
                ;;slime-fancy-inspector
-               ;;slime-fuzzy
+               slime-fuzzy
                slime-highlight-edits
                ;;slime-company
                ))

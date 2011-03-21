@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+#name: Clojure source file with Midje and -main
+#key: cljmm
+# --
+(ns $1
+  (:use midje.sweet))
+
+(unfinished )
+
+(defn -main []
+  $0)
+
+;;(-main)

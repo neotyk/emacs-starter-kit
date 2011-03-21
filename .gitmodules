@@ -34,3 +34,6 @@
 [submodule "cl-closure-template"]
 	path = cl-closure-template
 	url = https://github.com/archimag/cl-closure-template.git
+[submodule "plugins/yasnippet"]
+	path = plugins/yasnippet
+	url = https://github.com/emacsmirror/yasnippet.git

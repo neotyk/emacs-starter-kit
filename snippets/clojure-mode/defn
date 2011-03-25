@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Public function with doc string.
+# key: defn
+# --
+(defn $1
+  "$2"
+  [$3]
+  $0(throw (Exception. "not implemented")))

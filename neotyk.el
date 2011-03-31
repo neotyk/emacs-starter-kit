@@ -134,3 +134,14 @@
 (yas/initialize)
 (setq yas/snippet-dirs '("~/.emacs.d/snippets"
                          "~/.emacs.d/plugins/yasnippet/snippets"))
+
+;; align configuration
+(add-to-list 'align-lisp-modes 'clojure-mode)
+(add-to-list 'align-rules-list
+             '(clojure-keyword-map
+               (regexp . ":[^\s]+\\(\s+\\).+")
+               (group  . 1)
+               (modes  . align-lisp-modes)))
+
+;; enable upcase region
+(put 'upcase-region 'disabled nil)

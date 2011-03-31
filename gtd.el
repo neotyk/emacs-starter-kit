@@ -6,6 +6,9 @@
 (add-to-list 'org-modules 'org-timer)
 (setq org-timer-default-timer 25)
 (setq org-return-follows-link t)
+(setq org-agenda-todo-list-sublevels nil)
+;; TODO make pomodoro growl notify
+
 (add-hook 'org-clock-in-hook
           '(lambda ()
              (if (not org-timer-current-timer)
@@ -19,7 +22,13 @@
                        '((agenda time-up priority-down tag-up)))
                       (org-deadline-warning-days 0)))))
         ("P" "Project List"
-         ((tags "PROJECT")))
+         ((tags "CATEGORY=\"Projects\"")
+          ))
+        ("N" "NEXT actions"
+         ((todo "NEXT|WAITING|APPT"
+                ((org-agenda-sorting-strategy
+                  '((agenda category-up priority-down time-up)))
+                 (org-deadline-warning-days 7)))))
         ("O" "Office"
           ((agenda)
            (tags-todo "OFFICE")))

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#contributor: Hubert Iwaniuk <neotyk@kungfoo.pl>
+#name: DocType HTML5
+#key: doctype
+# --
+<!DOCTYPE html>

@@ -136,6 +136,7 @@
                          "~/.emacs.d/plugins/yasnippet/snippets"))
 
 ;; align configuration
+(require 'align)
 (add-to-list 'align-lisp-modes 'clojure-mode)
 (add-to-list 'align-rules-list
              '(clojure-keyword-map

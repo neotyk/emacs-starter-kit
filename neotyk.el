@@ -146,3 +146,6 @@
 
 ;; enable upcase region
 (put 'upcase-region 'disabled nil)
+
+;; gnugo
+(require 'gnugo)

@@ -5,4 +5,7 @@
 (set-face-font 'default "-apple-Inconsolata-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 (set-face-font 'org-column "-apple-Inconsolata-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 
+(require 'custom-erc-topic)
+(require 'custom-growl-topic)
+
 (provide 'ui-topic)

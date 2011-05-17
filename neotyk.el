@@ -6,8 +6,6 @@
 
 ;; ui topic
 (require 'ui-topic)
-(require 'custom-erc-topic)
-(require 'custom-growl-topic)
 
 (setq flyspell-mode t)
 

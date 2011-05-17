@@ -42,4 +42,4 @@
            (tags-todo "COMPUTER")))
         ))
 
-(provide 'gtd)
+(provide 'gtd-topic)

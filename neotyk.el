@@ -8,7 +8,7 @@
 
 ;; org-mode
 (setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))
-(require 'gtd)
+(require 'gtd-topic)
 (org-reload)
 
 (setq flyspell-mode t)

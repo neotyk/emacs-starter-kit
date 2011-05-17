@@ -23,4 +23,4 @@
 
 (add-hook 'erc-text-matched-hook 'my-erc-hook)
 
-(provide 'custom-growl)
+(provide 'custom-growl-topic)

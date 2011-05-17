@@ -1,6 +1,3 @@
-(require 'custom-erc)
-(require 'custom-growl)
-
 ;; setup topics
 (setq load-path (cons "~/.emacs.d/topics" load-path))
 (require 'dev-topic)
@@ -11,19 +8,12 @@
 (require 'gtd-topic)
 (org-reload)
 
+;; ui topic
+(require 'ui-topic)
+(require 'custom-erc-topic)
+(require 'custom-growl-topic)
+
 (setq flyspell-mode t)
-
-; (color-theme-zenburn)
-
-;; (unless (zenburn-format-spec-works-p)
-;;   (zenburn-define-format-spec))
-
-;; Inconsolata font
-(set-face-attribute 'default nil
-                    :family "Inconsolata" :height 140 :weight 'normal)
-
-(set-face-font 'default "-apple-Inconsolata-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
-(set-face-font 'org-column "-apple-Inconsolata-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 
 ;(setq next-line-add-newlines t)
 

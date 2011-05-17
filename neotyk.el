@@ -1,23 +1,15 @@
 (require 'custom-erc)
 (require 'custom-growl)
 
-;; magit
-(add-to-list 'load-path "~/.emacs.d/magit")
-(require 'magit)
-
-;; elein
-(add-to-list 'load-path "~/.emacs.d/elein")
-(require 'elein)
+;; setup topics
+(setq load-path (cons "~/.emacs.d/topics" load-path))
+(require 'dev-topic)
+(require 'clojure-topic)
 
 ;; org-mode
 (setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))
 (require 'gtd)
 (org-reload)
-
-;; gist
-(add-to-list 'load-path "~/.emacs.d/gist.el/")
-(require 'gist)
-(require 'gist-auth)
 
 (setq flyspell-mode t)
 

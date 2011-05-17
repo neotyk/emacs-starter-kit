@@ -61,3 +61,5 @@
             ;;(company-mode t)
             ;; (set (make-local-variable 'company-beckends) '(slime-company-beckend))
             ))
+
+(provide 'clojure-topic)

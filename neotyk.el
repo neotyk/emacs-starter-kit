@@ -2,11 +2,7 @@
 (setq load-path (cons "~/.emacs.d/topics" load-path))
 (require 'dev-topic)
 (require 'clojure-topic)
-
-;; org-mode
-(setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))
-(require 'gtd-topic)
-(org-reload)
+(require 'org-topic)
 
 ;; ui topic
 (require 'ui-topic)

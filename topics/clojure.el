@@ -62,4 +62,13 @@
             ;; (set (make-local-variable 'company-beckends) '(slime-company-beckend))
             ))
 
+;; align configuration
+(require 'align)
+(add-to-list 'align-lisp-modes 'clojure-mode)
+(add-to-list 'align-rules-list
+             '(clojure-keyword-map
+               (regexp . ":[^\s]+\\(\s+\\).+")
+               (group  . 1)
+               (modes  . align-lisp-modes)))
+
 (provide 'clojure-topic)

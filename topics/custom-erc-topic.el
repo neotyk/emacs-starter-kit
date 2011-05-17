@@ -47,4 +47,4 @@ you'll change the colors used for nicks."
 ;; This adds the ERC message insert hook.
 (add-hook 'erc-insert-modify-hook 'my-insert-modify-hook)
 
-(provide 'custom-erc)
+(provide 'custom-erc-topic)

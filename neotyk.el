@@ -64,6 +64,7 @@
             (paredit-mode t)
             (slime-mode t)
             (midje-mode t)
+            (flyspell-mode nil)
             ;;(company-mode t)
             ;; (set (make-local-variable 'company-beckends) '(slime-company-beckend))
             ))

@@ -43,3 +43,6 @@
 [submodule "js2-mode"]
 	path = js2-mode
 	url = git://github.com/mooz/js2-mode.git
+[submodule "swank-js"]
+	path = swank-js
+	url = git://github.com/ivan4th/swank-js.git

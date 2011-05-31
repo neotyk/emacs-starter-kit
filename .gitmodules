@@ -40,3 +40,6 @@
 [submodule "smart-tab"]
 	path = smart-tab
 	url = https://github.com/genehack/smart-tab.git
+[submodule "js2-mode"]
+	path = js2-mode
+	url = git://github.com/mooz/js2-mode.git

@@ -37,3 +37,6 @@
 [submodule "plugins/yasnippet"]
 	path = plugins/yasnippet
 	url = https://github.com/emacsmirror/yasnippet.git
+[submodule "smart-tab"]
+	path = smart-tab
+	url = https://github.com/genehack/smart-tab.git

@@ -33,4 +33,9 @@
 (setq yas/snippet-dirs '("~/.emacs.d/snippets"
                          "~/.emacs.d/plugins/yasnippet/snippets"))
 
+;; smart-tab
+(add-to-list 'load-path "~/.emacs.d/smart-tab/")
+(require 'smart-tab)
+(global-smart-tab-mode 1)
+
 (provide 'ux-topic)

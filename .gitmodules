@@ -46,3 +46,6 @@
 [submodule "swank-js"]
 	path = swank-js
 	url = git://github.com/ivan4th/swank-js.git
+[submodule "plugins/zencoding"]
+	path = plugins/zencoding
+	url = https://github.com/rooney/zencoding.git

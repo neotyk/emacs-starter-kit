@@ -5,6 +5,7 @@
 (require 'slime-topic)
 (require 'clojure-topic)
 (require 'haskell-topic)
+(require 'html-topic)
 (require 'org-topic)
 (require 'ui-topic)
 (require 'ux-topic)

@@ -7,7 +7,7 @@
 ;; Define the list of colors to use when coloring IRC nicks
 (setq-default erc-colors-list '("blue" "green" "yellow"
                                 "gray" "brown" "red"
-                                "purple" "white" "cyan"))
+                                "purple" "black" "cyan"))
 
 (defun build-nick-face-list ()
   "build-nick-face-list builds a list of new faces using the

@@ -9,7 +9,7 @@
 (require 'clojure-test-mode)
 
 ;; midje
-(add-to-list 'load-path "~/.emacs.d/midje/")
+(add-to-list 'load-path "~/.emacs.d/plugins/midje-mode/")
 (require 'midje-mode)
 (eval-after-load 'clojure-mode
   '(define-clojure-indent
@@ -17,6 +17,7 @@
      (facts 'defun)
      (against-background 'defun)
      (provided 0)))
+(require 'clojure-jump-to-file)
 
 ;; slime
 (require 'slime-topic)
@@ -41,5 +42,8 @@
                (regexp . ":[^\s]+\\(\s+\\).+")
                (group  . 1)
                (modes  . align-lisp-modes)))
+
+;; support ClojureScript as well
+(add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
 
 (provide 'clojure-topic)

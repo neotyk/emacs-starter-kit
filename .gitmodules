@@ -49,3 +49,9 @@
 [submodule "plugins/zencoding"]
 	path = plugins/zencoding
 	url = https://github.com/rooney/zencoding.git
+[submodule "plugins/midje-mode"]
+	path = plugins/midje-mode
+	url = git://github.com/dnaumov/midje-mode.git
+[submodule "plugins/undo-tree"]
+	path = plugins/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git

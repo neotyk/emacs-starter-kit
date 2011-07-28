@@ -38,4 +38,10 @@
 (require 'smart-tab)
 (global-smart-tab-mode 1)
 
+;; undo-tree
+(add-to-list 'load-path "~/.emacs.d/plugins/undo-tree/")
+(require 'undo-tree)
+(global-undo-tree-mode)
+
+
 (provide 'ux-topic)

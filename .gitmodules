@@ -55,3 +55,6 @@
 [submodule "plugins/undo-tree"]
 	path = plugins/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "plugins/slamhound"]
+	path = plugins/slamhound
+	url = https://github.com/technomancy/slamhound.git

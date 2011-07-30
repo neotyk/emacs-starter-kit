@@ -46,4 +46,8 @@
 ;; support ClojureScript as well
 (add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
 
+;; slamhound
+(add-to-list 'load-path "~/.emacs.d/plugins/slamhound")
+(require 'slamhound)
+
 (provide 'clojure-topic)

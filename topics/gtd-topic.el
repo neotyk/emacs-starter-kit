@@ -25,7 +25,7 @@
          ((tags "CATEGORY=\"Projects\"")
           ))
         ("N" "NEXT actions"
-         ((todo "NEXT|WAITING|APPT|CALL|STARTED"
+         ((todo "NEXT|WAITING|WRITE|APPT|CALL|STARTED"
                 ((org-agenda-ndays 7)
                  (org-agenda-sorting-strategy
                   '((agenda category-up priority-down time-up)))

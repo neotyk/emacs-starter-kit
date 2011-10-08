@@ -38,5 +38,13 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 
+;; idle highlight
+(define-globalized-minor-mode global-idle-highilght-mode
+  idle-highlight-mode (lambda () (idle-highlight-mode t))
+  :group 'idle-highlight)
+(global-idle-highilght-mode t)
+
+;; hi-lock-mode
+(global-hi-lock-mode t)
 
 (provide 'ux-topic)

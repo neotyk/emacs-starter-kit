@@ -47,4 +47,7 @@
 ;; hi-lock-mode
 (global-hi-lock-mode t)
 
+;; Allow narrowing
+(put 'narrow-to-page 'disabled nil)
+
 (provide 'ux-topic)

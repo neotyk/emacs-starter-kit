@@ -75,6 +75,3 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 (if (file-exists-p user-specific-config) (load user-specific-config))
-
-;;; init.el ends here
-(put 'narrow-to-page 'disabled nil)

@@ -4,7 +4,8 @@
 (require 'slime)
 (add-hook 'slime-repl-mode-hook
           (lambda ()
-            (highlight-parentheses-mode t)))
+            (highlight-parentheses-mode t)
+            (paredit-mode t)))
 
 (setq slime-protocol-version 'ignore)
 
